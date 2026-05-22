@@ -1,0 +1,111 @@
+.main_pages{
+    margin-bottom: 200px;
+}
+
+h1{
+    display: none;
+}
+
+/* ————————————————
+   MARQUEE
+——————————————— */
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 3rem;
+}
+
+.track {
+  display: inline-block;
+  animation: scroll 12s linear infinite;
+}
+
+.track span {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 800;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  color: #3E3F48;
+  max-width: 82rem;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ————————————————
+   LAYOUT 2 COLONNES
+——————————————— */
+
+.two-columns {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+/* Bloc texte fixe */
+.static-modal{
+    background-color: #F8F8FB;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+
+    position: sticky;
+    top: 2rem;
+    width: 35%;
+}
+
+/* Colonne images */
+.scrolling-images {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.scrolling-images img,
+.scrolling-images picture img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.scrolling-images picture {
+  width: 100%;
+  display: block;
+}
+
+/* ————————————————
+   MOBILE
+——————————————— */
+
+@media (max-width: 768px) {
+
+  #burger-button{
+      padding-bottom: 200px;
+  }
+
+  .two-columns {
+    flex-direction: column;
+    margin-bottom: 4rem; /* plus besoin de 200vh en mobile */
+  }
+
+  .static-modal,
+  .scrolling-images {
+    width: 100%;
+  }
+
+  /* Désactivation du sticky en mobile */
+  .static-modal {
+    position: static;
+  }
+
+  .hero {
+    background-image: url("spotmypulse/media/header-smp-mobile.jpg");
+    height: 50vh;
+  }
+}

@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: inherit;
+    color: inherit;
+    font: inherit;
+}
+
+html {
+    font-size: 16px; /* Valeur par défaut des navigateurs */
+    padding: 24px 32px 24px 32px;
+}
+
+
+:root{
+    
+    --primary-light-color: #ACADC9;  
+    --primary-medium-color: ;
+    --primary-dark-color: ;  
+    --secondary-color: #391ADE; 
+    --secondary-light-color: #7D3EFF;
+    --secondary-dark-color: #5318CC;
+    --tertiary : ;
+    --background-light: #1FFFFFF;
+    --background-medium: #F8F8FB;
+    --background-dark: #1A1A1E;
+    --color-system-valid: #C4FCF0;
+    background-color: var(--background-light); 
+}
+
+
+
+.alegreya-classic{
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.alegreya-sans-sc-thin {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.alegreya-sans-sc-light {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.alegreya-sans-sc-regular {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.alegreya-sans-sc-medium {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.alegreya-sans-sc-bold {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.alegreya-sans-sc-extrabold {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.alegreya-sans-sc-black {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.alegreya-sans-sc-thin-italic {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.alegreya-sans-sc-light-italic {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.alegreya-sans-sc-regular-italic {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.alegreya-sans-sc-medium-italic {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.alegreya-sans-sc-bold-italic {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.alegreya-sans-sc-extrabold-italic {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.alegreya-sans-sc-black-italic {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.afacad {
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+h1{
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 3rem;
+  color: #3E3F48;
+  padding: 150px 58px  58px  36px;
+  max-width: 82rem;
+}
+
+h2{
+    font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #ACADC9;
+  max-width: 82rem;
+  padding: 32px 0px 32px 0px;
+
+}
+
+h3{
+    font-family:"Alegreya Sans SC";
+    font-size: 2rem;
+    padding: 16px 0px 16px 0px;
+}
+
+h4{
+    font-family:"Afacad";
+    font-size: 1rem;
+}
+
+p{
+    font-family:"Afacad";
+    font-size: 1rem;
+}
+
+
+
+.main_pages{
+    display: flex; flex-direction: row; align-items: center;
+    width: fit-content; padding: 2rem; gap: 56px;
+    font-family: "Afacad"; font-size: 1.5rem;  
+    background-color: #F8F8FB;
+    border-radius: 24px;
+}
+
+nav .main_pages a 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #87889E;
+}
+
+nav a:hover 
+{
+    color: #1A1A1E;
+}
+
+/* --- BURGER BUTTON --- */
+
+#burger-button {
+  width: 40px;
+  height: 32px;
+  position: relative;
+  cursor: pointer;
+  display: none; /* visible seulement en mobile */
+  z-index: 9999;
+}
+
+#burger-button span {
+  position: absolute;
+  left: 0;
+  height: 5px;
+  background-color: #ADAEC8;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+/* Largeurs différentes */
+#burger-button span:nth-child(1) {
+  width: 100%;
+  top: 0;
+}
+
+#burger-button span:nth-child(2) {
+  width: 50%;
+  top: 13px;
+}
+
+#burger-button span:nth-child(3) {
+  width: 25%;
+  top: 26px;
+}
+
+/* --- BURGER BUTTON : ANIMATION EN CROIX --- */
+
+#burger-button.open span:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+  width: 100%; /* pour garder la croix propre */
+}
+
+#burger-button.open span:nth-child(2) {
+  opacity: 0;
+}
+
+#burger-button.open span:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+  width: 100%; /* pour garder la croix propre */
+}
+
+/* --- ACCUEIL PROJET --- */
+
+.project-container{
+    width: fit-content;
+    display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.home-project-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.home-project-name p{
+    color: #ACADC9;
+}
+
+.video-thumbnail {
+    display: block;
+    width: 100%;
+    max-width: 1000px; /* taille desktop */
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.video-thumbnail video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+/* --- PAGES PROJET --- */
+
+.hero {
+  background-image: url("spotmypulse/media/header-smp.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
+}
+
+
+/* -------------------- VERSION MOBILE ----------------------- */
+
+@media (max-width: 768px) {
+
+    h1{
+        font-size: 2rem;
+        padding: 150px 0px 0px 0px;
+
+    }
+
+    h2{
+        font-size: 1.5rem;
+        padding-bottom: 24px;
+    }
+
+  /* Afficher le burger */
+  #burger-button {
+    display: block;
+  }
+
+  /* Menu mobile caché par défaut */
+  .main_pages {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F8F8FB;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
+    transform: translateY(-100%); /* caché au-dessus */
+    transition: transform 0.35s ease;
+    z-index: 9990;
+  }
+
+  /* Menu visible quand ouvert */
+  .main_pages.open {
+    transform: translateY(0); /* descend */
+  }
+
+  /* Liens en mobile */
+  .main_pages a {
+    display: block;
+    font-size: 2.2rem;
+    color: #3E3F48;
+  }
+}

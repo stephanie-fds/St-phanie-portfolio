@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+
+.main_pages{
+    background-color: #1A1A1E;
+}
+
+nav .main_pages a 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #87889E;
+}
+
+h1{
+    display: none;
+}
+
+.container-gallery{
+    padding: 6rem;
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 32px;
+}
