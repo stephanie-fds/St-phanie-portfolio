@@ -1,37 +1,38 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: inherit;
-    color: inherit;
-    font: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: inherit;
+  color: inherit;
+  font: inherit;
 }
 
 html {
-    font-size: 16px; /* Valeur par défaut des navigateurs */
-    /* padding: 24px 32px 24px 32px; */
+  font-size: 16px;
+  /* Valeur par défaut des navigateurs */
+  /* padding: 24px 32px 24px 32px; */
 }
 
 
-:root{
-    
-    --primary-light-color: #ACADC9;  
-    --primary-medium-color: ;
-    --primary-dark-color: ;  
-    --secondary-color: #391ADE; 
-    --secondary-light-color: #7D3EFF;
-    --secondary-dark-color: #5318CC;
-    --tertiary : ;
-    --background-light: #1FFFFFF;
-    --background-medium: #F8F8FB;
-    --background-dark: #1A1A1E;
-    --color-system-valid: #C4FCF0;
-    background-color: var(--background-light); 
+:root {
+
+  --primary-light-color: #ACADC9;
+  --primary-medium-color: ;
+  --primary-dark-color: ;
+  --secondary-color: #391ADE;
+  --secondary-light-color: #7D3EFF;
+  --secondary-dark-color: #5318CC;
+  --tertiary: ;
+  --background-light: #1FFFFFF;
+  --background-medium: #F8F8FB;
+  --background-dark: #1A1A1E;
+  --color-system-valid: #C4FCF0;
+  background-color: var(--background-light);
 }
 
 
 
-.alegreya-classic{
+.alegreya-classic {
   font-family: "Alegreya", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -130,86 +131,91 @@ html {
 }
 
 
-h1{
+h1 {
   font-family: "Alegreya Sans SC", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
   font-size: 4rem;
   color: #3E3F48;
-  padding: 150px 58px  58px 40px;
+  padding: 150px 58px 58px 40px;
   max-width: 82rem;
 }
 
-h2{
-    font-family: "Alegreya", serif;
+h2 {
+  font-family: "Alegreya", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #ACADC9;
   max-width: 82rem;
   padding: 0px 40px 80px 40px;
 
 }
 
-h3{
-    font-family:"Alegreya Sans SC";
-    font-size: 2.5rem;
-    padding: 16px 0px 16px 0px;
-    color: #3E3F48;
+h3 {
+  font-family: "Alegreya Sans SC";
+  font-size: 2.5rem;
+  /* padding: 16px 0px 16px 0px; */
+  color: #3E3F48;
 }
 
-h4{
-    font-family:"Afacad";
-    font-size: 2rem;
-    color: #3E3F48;
-    padding: 16px 0px 16px 0px;
+h4 {
+  font-family: "Afacad";
+  font-size: 2rem;
+  color: #3E3F48;
+  padding: 16px 0px 16px 0px;
 }
 
-h5{
-  font-family:"Alegreya Sans SC";
-    font-size: 1.5rem;
-    padding: 16px 0px 16px 0px;
-    color: #3E3F48;
+h5 {
+  font-family: "Alegreya Sans SC";
+  font-size: 1.5rem;
+  padding: 16px 0px 16px 0px;
+  color: #3E3F48;
 }
 
-h6{
-    font-family:"Afacad";
-    font-size: 1rem;
-    color: #3E3F48;
-} /*Uniquement dans footer*/
-
-p{
-    font-family:"Afacad";
-    font-size: 1.5rem;
-    color: #3E3F48;
+h6 {
+  font-family: "Afacad";
+  font-size: 1rem;
+  color: #3E3F48;
 }
 
-header, section{
+/*Uniquement dans footer*/
+
+p {
+  font-family: "Afacad";
+  font-size: 1.5rem;
+  color: #3E3F48;
+}
+
+header, section {
   padding: 24px;
 }
 
-.main_pages{
-    display: flex; flex-direction: row; align-items: center;
-    width: fit-content; padding: 2rem; gap: 56px;
-    font-family: "Afacad"; font-size: 1.5rem;  
-    background-color: #F8F8FB;
-    border-radius: 24px;
+.main_pages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  padding: 2rem;
+  gap: 56px;
+  font-family: "Afacad";
+  font-size: 1.5rem;
+  background-color: #F8F8FB;
+  border-radius: 24px;
 }
 
-nav .main_pages a 
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #87889E;
+nav .main_pages a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #87889E;
 }
 
-nav a:hover 
-{
-    color: #1A1A1E;
+nav a:hover {
+  color: #1A1A1E;
 }
 
 /* --- BURGER BUTTON --- */
@@ -219,7 +225,8 @@ nav a:hover
   height: 32px;
   position: relative;
   cursor: pointer;
-  display: none; /* visible seulement en mobile */
+  display: none;
+  /* visible seulement en mobile */
   z-index: 9999;
 }
 
@@ -252,7 +259,8 @@ nav a:hover
 
 #burger-button.open span:nth-child(1) {
   transform: translateY(13px) rotate(45deg);
-  width: 100%; /* pour garder la croix propre */
+  width: 100%;
+  /* pour garder la croix propre */
 }
 
 #burger-button.open span:nth-child(2) {
@@ -261,43 +269,48 @@ nav a:hover
 
 #burger-button.open span:nth-child(3) {
   transform: translateY(-13px) rotate(-45deg);
-  width: 100%; /* pour garder la croix propre */
+  width: 100%;
+  /* pour garder la croix propre */
 }
 
 /* --- ACCUEIL TINY PROJET --- */
 
-.project-container{
-    width: fit-content;
-    display: flex;
-   flex-direction: column;
-   gap: 16px;
+.project-container {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.home-project-name{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 24px;
+.home-project-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
 }
-.home-project-name p{
-    color: #ACADC9;
+
+.home-project-name p {
+  color: #ACADC9;
 }
 
 .video-thumbnail {
-    display: block;
-    width: 100%;
-    max-width: 1000px; /* taille desktop */
-    border-radius: 16px;
-    overflow: hidden;
-    cursor: pointer;
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  /* taille desktop */
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .video-thumbnail video {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
+
 /* --- PAGES PROJET --- */
 
 .hero {
@@ -309,7 +322,7 @@ nav a:hover
   height: 70vh;
 }
 
-footer{
+footer {
   display: flex;
   flex-direction: column;
   background-color: #1A1A1E;
@@ -317,89 +330,154 @@ footer{
   gap: 8px;
 }
 
-footer h3{
-  color: #F8F8FB ;
+footer h3 {
+  color: #F8F8FB;
 }
 
-footer h6, footer p{
+footer h6,
+footer p {
   color: #D2D2F3;
 }
 
 /* ------------------------------------------ CURRICULUM VITAE-------------------------------------------- */
 
-.curriculum{
+.mesdiplomes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding-top: 24px;
+}
+
+.curriculum {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 16px;
 }
 
-.card-cv{
+.card-cv {
   background-color: #F8F8FB;
   border-radius: 10px;
   padding: 24px;
   width: 530px;
 }
 
-.location p, .opener p{
+.location p,
+.opener p {
   color: #87889E;
 }
 
-.opener, .when{
+.opener,
+.when {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.location{
+.location {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 8px;
 }
 
-.description{
+.description {
   padding-top: 16px;
+}
+
+.diplome{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 24px 8px 24px;
+  border-left: solid;
+  border-color: #87889E; 
 }
 
 /* Paragraphe caché par défaut */
 .card-cv .description {
-    display: none;
+  display: none;
 }
 
 /* Quand la carte est ouverte */
 .card-cv.open .description {
-    display: block;
+  display: block;
 }
 
 /* Optionnel : curseur clic */
 .card-cv .opener {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 16px;
+}
+
+.tag{
+  background-color: #E2E3F1 ;
+  width: fit-content;
+  padding: 4px 12px 4px 12px;
+  border-radius: 100px;
+}
+
+/* Tags cachés par défaut */
+.card-cv .tag {
+  display: none;
+}
+
+/* Quand la carte est ouverte, on affiche les tags */
+.card-cv.open .tag {
+  display: inline-block; /* ou block selon ton design */
+}
 
 
 /* -------------------- VERSION MOBILE ----------------------- */
 
 @media (max-width: 768px) {
 
-    h1{
-        font-size: 3rem;
-        padding: 150px 0px 0px 0px;
+  h1 {
+    font-size: 3rem;
+    padding: 150px 0px 0px 0px;
 
-    }
+  }
 
-    h2{
-        font-size: 2rem;
-        padding: 24px 0px 24px 0px;
-    }
+  h2 {
+    font-size: 2rem;
+    padding: 24px 0px 24px 0px;
+  }
 
-    h3{
-      font-size: 2rem;
-    }
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+
+    font-size: 1.5rem;
+
+  }
+
+  h6 {
+    font-size: 0.8rem;
+  } /*Uniquement dans footer*/
+
+  p {
+
+    font-size: 1rem;
+
+  }
+
 
   /* Afficher le burger */
   #burger-button {
@@ -419,14 +497,16 @@ footer h6, footer p{
     align-items: center;
     gap: 32px;
 
-    transform: translateY(-100%); /* caché au-dessus */
+    transform: translateY(-100%);
+    /* caché au-dessus */
     transition: transform 0.35s ease;
     z-index: 9990;
   }
 
   /* Menu visible quand ouvert */
   .main_pages.open {
-    transform: translateY(0); /* descend */
+    transform: translateY(0);
+    /* descend */
   }
 
   /* Liens en mobile */
@@ -436,11 +516,11 @@ footer h6, footer p{
     color: #3E3F48;
   }
 
-  .curriculum{
+  .curriculum {
     flex-direction: column;
   }
 
-  .card-cv{
+  .card-cv {
     width: 100%;
   }
 }

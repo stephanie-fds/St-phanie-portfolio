@@ -50,10 +50,12 @@ h1{
 
 /* Bloc texte fixe */
 .static-modal{
+
+    display: flex; flex-direction: column;
+    gap: 24px;
     background-color: #F8F8FB;
     border-radius: 1.5rem;
     padding: 1.5rem;
-
     position: sticky;
     top: 2rem;
     width: 35%;
@@ -78,6 +80,8 @@ h1{
   width: 100%;
   display: block;
 }
+
+
 
 /* ————————————————
    MOBILE
